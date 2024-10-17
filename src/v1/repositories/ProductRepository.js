@@ -10,8 +10,6 @@ const findById = async (id) => {
 };
 
 const findByName = async (name) => {
-    console.log(name);
-
     return await Product.findOne({ where: { nama: name } });
 };
 
