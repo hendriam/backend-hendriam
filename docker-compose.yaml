@@ -1,0 +1,28 @@
+version: "3"
+services:
+  app:
+    build: .
+    image: hendriam18/marketplace
+    container_name: marketplace
+    environment:
+      - APP_HOST=${APP_HOST}
+      - APP_PORT=${APP_PORT}
+      - DB_HOST=${DB_HOST}
+      - DB_PORT=${DB_PORT}
+      - DB_USER=${DB_USER}
+      - DB_PASS=${DB_PASS}
+      - DB_NAME=${DB_NAME}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRED=${JWT_EXPIRED}
+      - LEVEL_LOG=${LEVEL_LOG}
+    expose:
+      - 3000
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+networks:
+  default:
+    external: true
+    name: local
