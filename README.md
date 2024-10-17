@@ -116,7 +116,7 @@ Content-Length: 54
 }
 ```
 
-##### Create a New Book
+##### Create a New Product
 
 Description: This endpoint for create new a product.
 
