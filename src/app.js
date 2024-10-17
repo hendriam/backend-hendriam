@@ -3,7 +3,6 @@ const app = express();
 const bodyParser = require('body-parser');
 const config = require('./configs/config');
 const logger = require('./configs/logger');
-const dbConnection = require('./configs/database');
 const sequelize = require('./configs/database');
 const errorHandler = require('./middlewares/error-handler');
 

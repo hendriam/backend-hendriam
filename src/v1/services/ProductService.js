@@ -6,6 +6,10 @@ const getProducts = async () => {
 };
 
 const getProductById = async (id) => {
+    const existingProduct = await productRepository.findById(id);
+    if (!existingProduct) {
+        throw new ResponseError('Product not found', 404);
+    }
     return await productRepository.findById(id);
 };
 
