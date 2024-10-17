@@ -3,8 +3,6 @@ const ResponseError = require('../utilities/response-error');
 const { ValidationError } = require('sequelize');
 
 const errorHandler = (err, req, res, next) => {
-    console.log(err.stack);
-
     if (err instanceof ValidationError) {
         const errors = err.errors.map((error) => ({
             path: error.path,
