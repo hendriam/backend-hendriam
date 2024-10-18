@@ -1,6 +1,6 @@
 # backend-hendriam
 
-This project is for testing as a backend engineer at the company I applied to.
+This project is a simple RESTful API built with NodeJS using the Repository Pattern.
 I implemented the repository pattern in this project. The Repository Pattern is a design pattern in software development that aims to separate data access logic from business logic. By using this pattern, interactions with data sources (such as databases) are encapsulated in a separate layer known as the repository. This project demonstrates how to implement this design pattern in a RESTful API.
 
 ## Getting Started
