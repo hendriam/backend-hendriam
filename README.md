@@ -1,6 +1,6 @@
 # backend-hendriam
 
-This project is a project for testing as a backend engineer in the company I applied for.
+This project is for testing as a backend engineer at the company I applied to.
 I implemented the repository pattern in this project. The Repository Pattern is a design pattern in software development that aims to separate data access logic from business logic. By using this pattern, interactions with data sources (such as databases) are encapsulated in a separate layer known as the repository. This project demonstrates how to implement this design pattern in a RESTful API.
 
 ## Getting Started
@@ -118,7 +118,7 @@ Content-Length: 54
 
 ##### Create a New Product
 
-Description: This endpoint for create new a product.
+Description: This endpoint for create a new product.
 
 ```
 POST /api/v1/product HTTP/1.1
